@@ -1,0 +1,451 @@
+/**
+ * CSS  attributes of the application
+ * @authors Naveena Kandasamy Rajkumar, Manish Sai Krishna Rudrakoti Chandrani
+ * */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+
+
+#adminButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+}
+
+#adminButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#customerButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+}
+
+#customerButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#employeeButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+}
+
+#employeeButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+/*Admin Login CSS */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+  
+}
+
+#adminUserName, #adminPassword {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0 0.0 1.0 0.0;
+    -fx-border-color: #c0c0c0;
+    -fx-text-fill: #333;
+    -fx-font-size: 14.0px;
+}
+
+#adminUserName:focused, #adminPassword:focused {
+    -fx-border-color: #5da5da;
+}
+
+#adminLoginBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#adminLoginBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#cancelBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#cancelBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+
+
+/*customer login CSS */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+#customerUserName, #customerPassword {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0 0.0 1.0 0.0;
+    -fx-border-color: #c0c0c0;
+    -fx-text-fill: #333;
+    -fx-font-size: 14.0px;
+}
+
+#customerUserName:focused, #customerPassword:focused {
+    -fx-border-color: #5da5da;
+}
+
+#customerLoginBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#customerLoginBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#cancelBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#cancelBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+
+/*Employee Login CSS */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+
+#empUserName, #empPassword {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0 0.0 1.0 0.0;
+    -fx-border-color: #c0c0c0;
+    -fx-text-fill: #333;
+    -fx-font-size: 14.0px;
+}
+
+#empUserName:focused, #empPassword:focused {
+    -fx-border-color: #5da5da;
+}
+
+#empLoginBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#empLoginBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#cancelBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#cancelBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+
+/*Admin Home Page CSS */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+#adminAvailableCars {
+    -fx-background-color: #f7f7f7;
+}
+
+#adminAvailableCars Label {
+    -fx-font-size: 12.0pt;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #333333;
+}
+
+#adminAvailableCars .text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4.0px;
+    -fx-padding: 6.0px;
+    -fx-font-size: 12.0pt;
+    -fx-font-family: "Arial";
+}
+
+#adminAvailableCars .combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4.0px;
+    -fx-padding: 6.0px;
+    -fx-font-size: 12.0pt;
+    -fx-font-family: "Arial";
+}
+
+#adminAvailableCars Button {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 12.0pt;
+    -fx-font-family: "Arial";
+    -fx-background-radius: 4.0px;
+    -fx-padding: 6.0px 12.0px;
+}
+
+#adminAvailableCars Button:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#adminAvailableCars .table-view {
+    -fx-font-size: 12.0pt;
+    -fx-font-family: "Arial";
+}
+
+#adminAvailableCars .table-view .column-header-background {
+    -fx-background-color: #f7f7f7;
+}
+
+#adminAvailableCars .table-view .column-header {
+    -fx-text-fill: #333333;
+}
+
+#adminAvailableCars .table-view .table-row-cell:even {
+    -fx-background-color: #f7f7f7;
+}
+
+#adminAvailableCars .table-view .table-row-cell:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+}
+
+#adminAvailableCars .table-view .table-cell {
+    -fx-border-color: #cccccc;
+}
+#homeBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#homeBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+#manageCarsBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#manageCarsBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+#manageCars_addBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#manageCars_addBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#manageCars_editBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#manageCars_editBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#manageCars_deleteBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#manageCars_deleteBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#manageCars_clearBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#manageCars_clearBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#logoutBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#logoutBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+#searchBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#searchBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+
+/*Sign up CSS */
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+
+#signupButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#signupButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#customerEmail, #customerPhoneNumber, #customerUserName, #customerPassword, #customerConfirmPassword {
+    -fx-background-color: transparent;
+    -fx-border-width: 0.0 0.0 1.0 0.0;
+    -fx-border-color: #c0c0c0;
+    -fx-text-fill: #333;
+    -fx-font-size: 14.0px;
+}
+
+#customerEmail:focused, #customerPhoneNumber:focused, #customerUserName:focused, #customerPassword:focused, #customerConfirmPassword:focused {
+    -fx-border-color: #5da5da;
+}
+
+/*Rents Car Page CSS*/
+
+#leftAnchorPane {
+    -fx-background-color: linear-gradient(to right, rgb(182.0, 244.0, 146.0), rgb(51.0, 139.0, 147.0));
+}
+#rentCarButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#rentCarButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+#logOutButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#logOutButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+#rentButton {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#rentButton:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+
+/*Admin Dashboard Charts CSS */
+
+#homeBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#homeBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+    
+}#managecarBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#managecarBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+    }
+    
+#logOutBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#logOutBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#carsRented {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+
+#totalBookings {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+
+#totalRevenue {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#carsAvailable {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+/*rent cars history */
+#rentCarsBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#rentCarsBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+    
+#viewBookingBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#viewBookingBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+
+#deleteBookingBtn {
+    -fx-background-color: rgb(51.0, 139.0, 147.0);
+    -fx-text-fill: white;
+    -fx-font-size: 14.0px;
+}
+
+#deleteBookingBtn:hover {
+    -fx-background-color: rgb(182.0, 244.0, 146.0);
+}
+    

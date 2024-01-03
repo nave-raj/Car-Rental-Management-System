@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerDashboardController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane id="leftAnchorPane" prefHeight="566.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button id="rentCarButton" fx:id="rentCarsBtn" layoutX="47.0" layoutY="203.0" mnemonicParsing="false" onAction="#goToRentCarsPage" prefHeight="34.0" prefWidth="134.0" text="Rent a Car">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button id="logOutButton" fx:id="rentCars_logOutBtn" layoutX="50.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="134.0" text="Log out">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Label alignment="CENTER" layoutX="38.0" layoutY="79.0" prefHeight="50.0" prefWidth="149.0" text="Welcome" textAlignment="CENTER">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentCars_userLabel" alignment="CENTER" layoutX="38.0" layoutY="114.0" prefHeight="50.0" prefWidth="149.0" text="User" textAlignment="CENTER">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Button id="rentCarButton" fx:id="viewBookingBtn" layoutX="47.0" layoutY="256.0" mnemonicParsing="false" onAction="#goToBookingHistoryPage" prefHeight="34.0" prefWidth="134.0" text="Booking History">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane id="AdminAvailableCars" fx:id="availableCars_grid" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="16.0" layoutY="28.0" prefHeight="238.0" prefWidth="821.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label layoutX="37.0" layoutY="28.0" text="Car ID">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Button id="rentButton" fx:id="rentCars_rentBtn" layoutX="684.0" layoutY="183.0" mnemonicParsing="false" onAction="#rentACar" prefHeight="26.0" prefWidth="114.0" text="Rent">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <ComboBox fx:id="rentCars_carId" layoutX="98.0" layoutY="22.0" onAction="#setAvailableCarBrands" prefWidth="150.0" promptText="Select" />
+                              <ComboBox fx:id="rentCars_brand" layoutX="98.0" layoutY="63.0" onAction="#setAvailableCarBrands" prefWidth="150.0" promptText="Select" />
+                              <Label layoutX="37.0" layoutY="69.0" text="Brand">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="rentCars_model" layoutX="99.0" layoutY="105.0" onAction="#setAvailableCarModels" prefWidth="150.0" promptText="Select" />
+                              <Label layoutX="38.0" layoutY="111.0" text="Model">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="rentCars_fName" layoutX="367.0" layoutY="22.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter First Name" />
+                              <TextField fx:id="rentCars_lName" layoutX="368.0" layoutY="63.0" prefHeight="26.0" prefWidth="164.0" promptText="Enter Last Name" />
+                              <Label layoutX="293.0" layoutY="28.0" text="First Name">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="293.0" layoutY="69.0" text="Last Name">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="161.0" text="Rent Date">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="257.0" layoutY="162.0" text="Return Date">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <DatePicker fx:id="rentCars_rentDate" layoutX="36.0" layoutY="183.0" prefHeight="26.0" prefWidth="161.0" promptText="DD/MM/YYYY" />
+                              <DatePicker fx:id="rentCars_returnDate" layoutX="255.0" layoutY="184.0" onAction="#calculateFinalRent" prefHeight="26.0" prefWidth="162.0" promptText="DD/MM/YYYY" />
+                              <Label fx:id="rentCars_total" layoutX="562.0" layoutY="186.0" prefHeight="22.0" prefWidth="83.0" text="\$0.0">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="494.0" layoutY="186.0" text="Total :">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="-33.0" layoutY="267.0" prefHeight="314.0" prefWidth="886.0">
+                           <children>
+                              <TableView fx:id="rentCars_tableView" layoutX="47.0" layoutY="53.0" onSort="#logout" prefHeight="250.0" prefWidth="824.0">
+                                <columns>
+                                  <TableColumn fx:id="rentCars_CarIdCol" prefWidth="159.99997329711914" text="Car ID" />
+                                  <TableColumn fx:id="rentCars_brandCol" prefWidth="171.1999969482422" text="Brand" />
+                                    <TableColumn fx:id="rentCars_modelCol" prefWidth="301.5999755859375" text="Model" />
+                                    <TableColumn fx:id="rentCars_priceCol" prefWidth="189.60003662109375" text="Price" />
+                                </columns>
+                              </TableView>
+                              <Label layoutX="52.0" layoutY="13.0" text="Cars Available">
+                                 <font>
+                                    <Font name="SansSerif Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

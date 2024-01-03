@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminDashboardController">
+   <children>
+      <AnchorPane fx:id="admin_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane fx:id="leftAnchorPane" prefHeight="566.0" prefWidth="231.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="manageCarsBtn" layoutX="49.0" layoutY="169.0" mnemonicParsing="false" onAction="#switchToEmployeeManageCars" prefHeight="34.0" prefWidth="133.0" text="Manage Cars">
+                           <font>
+                              <Font name="SansSerif Regular" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="viewBookingBtn" alignment="CENTER" layoutX="49.0" layoutY="228.0" mnemonicParsing="false" onAction="#switchToEmployeeBookingHistory" prefHeight="35.0" prefWidth="134.0" text="Manage Bookings" />
+                        <Button fx:id="logoutBtn" layoutX="57.0" layoutY="505.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="134.0" text="Log out" />
+                        <Label alignment="CENTER" layoutX="38.0" layoutY="55.0" prefHeight="50.0" prefWidth="149.0" text="Welcome" textAlignment="CENTER">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentCars_userLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="96.0" prefHeight="18.0" prefWidth="170.0" text="User" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="SansSerif Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane id="AdminAvailableCars" fx:id="availableCars_grid" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TableView fx:id="empBookingHistoryTable" layoutX="13.0" layoutY="114.0" prefHeight="450.0" prefWidth="842.0">
+                          <columns>
+                            <TableColumn fx:id="bookingHistory_customerIdCol" prefWidth="89.59999370574951" text="Booking Id" />
+                              <TableColumn fx:id="bookingHistory_carIdCol" prefWidth="80.00006103515625" text="Car Id" />
+                              <TableColumn fx:id="bookingHistory_brandCol" prefWidth="126.40000915527344" text="Brand" />
+                              <TableColumn fx:id="bookingHistory_modelCol" prefWidth="106.4000244140625" text="Model" />
+                              <TableColumn fx:id="bookingHistory_priceCol" prefWidth="115.20001220703125" text="Price" />
+                              <TableColumn fx:id="bookingHistory_rentDateCol" prefWidth="132.0" text="Rented Date" />
+                              <TableColumn fx:id="bookingHistory_returnDateCol" prefWidth="128.00006103515625" text="Returned Date" />
+                              <TableColumn fx:id="bookingHistory_statusCol" prefWidth="193.5999755859375" text="Status" />
+                          </columns>
+                        </TableView>
+                        <Label alignment="CENTER" layoutX="13.0" layoutY="26.0" prefHeight="50.0" prefWidth="149.0" text="Booking History" textAlignment="CENTER">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

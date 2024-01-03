@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginSignUpController">
+   <left>
+      <AnchorPane id="leftAnchorPane" prefHeight="600.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="256.0" layoutY="362.0" text="Welcome Admin" textFill="#efe8e8">
+               <font>
+                  <Font name="SansSerif Bold" size="24.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#e4dddd" glyphName="GEAR" layoutX="301.0" layoutY="330.0" size="10em" text="" />
+            <FontAwesomeIcon fill="#e7dfdf" glyphName="GEAR" layoutX="392.0" layoutY="245.0" size="3em" text="" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="382.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="adminUserName" layoutX="91.0" layoutY="244.0" prefHeight="26.0" prefWidth="218.0" promptText="Username" />
+            <PasswordField fx:id="adminPassword" layoutX="91.0" layoutY="293.0" prefHeight="26.0" prefWidth="218.0" promptText="Password" />
+            <Button fx:id="adminLoginBtn" layoutX="102.0" layoutY="347.0" mnemonicParsing="false" onAction="#loginAdmin" prefHeight="26.0" prefWidth="70.0" text="Log In">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="cancelBtn" layoutX="211.0" layoutY="347.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="26.0" prefWidth="65.0" text="Cancel">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label layoutX="149.0" layoutY="188.0" text="Log In">
+               <font>
+                  <Font name="SansSerif Bold" size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon glyphName="USER" layoutX="63.0" layoutY="264.0" size="20" />
+            <FontAwesomeIcon glyphName="LOCK" layoutX="65.0" layoutY="314.0" size="20" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
