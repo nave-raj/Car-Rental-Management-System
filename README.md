@@ -3,7 +3,7 @@
 The project is designed to manage car rentals for a car rental company. The system
 allows customers to book and manage car rentals, track booking history, allows admin and
 employees to manage cars and customer bookings, and view income charts. This proposed car
-rental management system project uses Java, JavaFX, Scene Builder, and MySQL to create a
+rental management system project is designed with a simple MVC model that uses Java, JavaFX, Scene Builder, and MySQL to create a
 user-friendly and secure system for managing car rentals.
 
 ## System Functionality
